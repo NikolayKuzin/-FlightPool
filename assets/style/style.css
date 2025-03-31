@@ -1,0 +1,512 @@
+/*Подключение Шрифта*/
+@font-face {
+    font-family: GardensC;
+    src: url("../font/GardensC.otf");
+}
+* {
+    font-family: "GardensC";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+/*Настройка для блока Главной страницы*/
+section {
+    padding: 1% 0;
+}
+div.wrapper {
+    padding: 1% 0;
+}
+div.content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1%;
+    overflow: hidden;
+}
+/*Стилизация Шапки*/
+header div.content {
+    display: flex;
+    justify-content: space-between;
+}
+header img {
+    width: 150px;
+    float: left;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+header nav li {
+    padding: 0 10px;
+}
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    cursor: allias;
+}
+header {
+    background-color: #1a203a;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+/*Блок Баннер*/
+section.banner {
+    width: 100%;
+    margin: 0 0;
+    padding: 0;
+    background-image: url("../../img/first-page-bg.png");
+    background-size: contain;
+    background-size: 100% 100%;
+    height: 120vh;
+    background-repeat: no-repeat;
+}
+/*Блок инфографики*/
+
+h2 {
+    text-align: center;
+    font-size: 64pt;
+    color: #1559c5;
+}
+
+h3 {
+    font-style: italic;
+    padding: 20px 0;
+}
+
+.info .inputs , .login .inputs{
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 3%;
+}
+
+.info input[type=text], .login input[type=text], input[type=password]{
+    width: 48%;
+    padding: 2% 1%;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+}
+
+button{
+    width: 40%;
+    height: 65px;
+    background-color: #f7bc1b;
+    color: white;
+    font-size: 24pt;
+    border-radius: 10px;
+    border-style: solid;
+    margin-top: 10px;
+}
+
+.info img{
+    display: block;
+    margin: 0 auto;
+}
+
+/*Блок доверия*/
+section.reviews .review{
+    border: 1px solid black;
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgba(185, 185, 185, 0.6);
+    margin: 25px auto;
+    padding: 30px 50px;
+}
+
+section.reviews{
+    background-image: url(../../img/about-us-bg.png);
+}
+
+section.reviews h3{
+    text-align: left;
+    font-size: 24pt;
+    padding-bottom: 13px;
+}
+
+section.reviews .comment{
+    text-align: left;
+    font-size: 14pt;
+}
+
+section.reviews .autor{
+    text-align: right;
+    font-size: 14pt;
+}
+
+/*Блок Поиск*/
+section.search{
+    background-image: url(../../img/search-bg.png);
+    height: 500px;
+    background-size: cover;
+}
+
+section.search .inputs2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.search .inputs2 input[type=text]{
+    width: 17%;
+    padding: 1% 1%;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    margin: 2% 5px;
+}
+
+section.search form{
+    padding-top: 60px;
+}
+
+/*Наши акции*/
+section.promos .blockpromo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo{
+    width: 18%;
+}
+
+.promo img{
+    width: 100%;
+}
+
+.promo *{
+    padding: 10px;
+}
+
+.promo h3{
+    font-size: 24pt;
+}
+
+.promo button{
+    width: 80%;
+    height: 50px;
+    font-size: 14pt;
+    background-color: #1559c5;
+}
+
+#promos{
+    background-color: #f7bc1b;
+}
+
+#promos .content{
+    background-color: transparent;
+}
+
+/*Блок Подписка*/
+#sub input[type=text]{
+    width: 60%;
+    margin: 1%;
+    padding: 1%;
+    font-size: 24pt;
+}
+
+.sub button{
+    width: 60%;
+}
+
+/*Подвал*/
+footer {
+    background-image: url(../../img/background-footer.png);
+    height: 440px;
+}
+
+footer h2{
+    color: white;
+    font-size: 56pt;
+    margin-bottom: 30px;
+}
+
+footer .content{
+    background-color: transparent;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+footer li{
+    padding: 0 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer div.content{
+    margin-top: 200px;
+}
+
+/*Страница Регистрации*/
+section.reg h3{
+    font-size: 24pt;
+}
+
+section.reg input[type=text], input[type=password]{
+    width: 49%;
+    padding: 1% 1%;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    font-size: 24pt;
+    margin: 1% 5%;
+}
+
+section.reg button{
+    margin: 1% 3%;
+    width: 49%;
+}
+
+/*Бронирование*/
+section.profile{
+    background-image: url(../../img/about-us-bg.png);
+}
+
+section.profile h3{
+    font-size: 24pt;
+    padding: 0 0;
+}
+
+section.profile div.bilet{
+    width: 70%;
+    padding: 1% 1%;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: black;
+    font-size: 24pt;
+    margin: 1% 5%;
+    text-align: left;
+    background-color: #b9b9b999;
+    height: 40vh;
+}
+
+section.profile button{
+    background-color: white;
+    color: black;
+}
+
+section.profile p{
+    font-size: 16pt;
+}
+
+section.profile button{
+    width: 100%;
+    background-color: white;
+    color: #1a203a;
+}
+
+/*Управление Бронированием*/
+.booking{
+    background-image: url(../../img/about-us-bg.png);
+}
+
+.perelet{
+    width: 100%;
+    padding: 50px;
+    border-radius: 15px;
+    margin: 15px auto;
+    background-color: #b9b9b999;
+    border: 1px solid rgba(185, 185, 185, 1);
+}
+
+.perelet img{
+    width: 50px;
+    height: 50px;
+}
+
+.booking button{
+    width: 140px;
+    font-size: 16px;
+}
+
+section.booking .data1{
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+/*Страница Поиск*/
+section.search2{
+    background-image: url(../../img/about-us-bg.png);
+    height: 150vh;
+}
+.race img{
+    height: 50px;
+    width: 50px;
+}
+
+section.search2 .race{
+    margin: 15px auto;
+    text-align: center;
+    width: 100%;
+    font-size: 14pt;
+    background-color: #b9b9b999;
+    border: 1px solid black;
+    line-height: 20pt;
+    padding: 50px;
+    border-radius: 16px;
+}
+
+.race input[type=checkbox]{
+    width: 40px;
+}
+
+section.search2 button{
+    width: 100%;
+}
+
+section.search2 .race input[type=checkbox]{
+    width: 40px;
+    height: 40px;
+}
+
+section.search2 .race table{
+    margin-top: 15px;
+    text-align: center;
+}
+
+section.search2 .race h3{
+    font-size: 24pt;
+    color: #1559c5;
+}
+ section.search2 .line{
+    background-color: #a3a2a2;
+    height: 1px;
+ }
+
+ section.search2{
+    margin-bottom: 100px;
+ }
+
+ /*Страница Бронирование*/
+ section.bron .race .ukaz{
+    font-size: 20pt;
+    padding: 15px 0;
+    text-align: left;
+ }
+
+ section.bron input[type=text]{
+    width: 100%;
+    font-size: 20pt;
+    padding: 1%;
+    margin: 10px 0;
+ }
+
+ section.bron button{
+    width: 47,3%;
+    margin: 10px;
+ }
+
+ .bron{
+    background-image: url(../../img/about-us-bg.png);
+ }
+
+ section.bron h3{
+    padding: 35px;
+    font-size: 24pt;
+ }
+
+.bron h2{
+    padding-bottom: 15px;
+}
+
+section.bron .race{
+    margin: 30px auto;
+    text-align: center;
+    width: 100%;
+    font-size: 14pt;
+    background-color: #b9b9b999;
+    border: 1px solid black;
+    line-height: 20pt;
+    padding: 50px;
+    border-radius: 16px;
+}
+
+section.bron table{
+    text-align: center;
+}
+
+/*Страница Выбора места*/
+section.seat table{
+    margin: 0 auto;
+    text-align: center;
+    width: 65%;
+    font-size: 18pt;
+    background-color: #b9b9b999;
+    border: 1px solid black;
+    line-height: 34pt;
+}
+
+section.seat button{
+   width: 65%;
+   margin-top: 30px;
+}
+
+section.seat .mesto:hover{
+    background-color: #f7bc1b;
+}
+
+/*Адаптив под мобильные устройства 480px*/
+@media screen and (max-device-width: 480px){
+    .content .logo img{ 
+        width: 100px; 
+    }
+    .content nav {
+        font-size: 9pt;
+    }
+    h2 {
+        font-size: 36pt;
+    }
+    button {
+        font-size: 14pt;
+        width: 70px;
+        height: 50px;
+        margin: 10px 0;
+    }
+    section.info img {
+        width: 500px;
+    }
+    section.reviews h3 {
+        font-size: 16pt;
+        padding: 5px 10px;
+    }
+    section.promos .blockpromo{
+        display: flex;
+        
+        flex-flow: column wrap;
+        
+    }
+    section.promos .promo{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+
+    }
+    section.promos .promo{
+        overflow: hidden;
+    }
+    section.promos .promo h3{
+      font-size: 14pt;
+    }
+    section.promos .promo p{
+        font-size: 8pt;
+      }
+      section.promos button{
+        font-size: 8pt;
+        width: 100px;
+      }
+    footer h2{
+        font-size: 25pt;
+    }  
+    footer ul{
+        font-size: 7pt;
+    }
+}
